@@ -1,0 +1,31 @@
+@import "includes/colours.css";
+
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+  .top-site-outer .top-site-icon,
+  .outer-wrapper .ds-top-sites .top-sites .top-site-outer .top-site-inner > a .tile {
+    transition: ease-out 200ms;
+    background-color: #f5f5f5b9 !important;
+  }
+
+  .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover),
+  .outer-wrapper .ds-top-sites .top-sites .top-site-outer .top-site-inner > a:is(.active, :focus, :hover) .tile {
+    transition: ease-in 200ms;
+    box-shadow: 0px 3px 8px #0000003d;
+  }
+
+  .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
+    transition: ease-in 200ms;
+  }
+
+  body::before {
+    content: "";
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0) no-repeat url(img/wallpaper.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+}

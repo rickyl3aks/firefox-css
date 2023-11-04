@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --uc-base-colour: #753737be;
+    --uc-highlight-colour: #381a1abe;
+  }
+}
+
+:root {
+  --urlbar-icon-padding: 3px !important;
+  --urlbar-min-height: calc(var(--tab-min-height) - 3px) !important;
+
+  --lwt-frame: var(--uc-base-colour) !important;
+  --lwt-accent-color: var(--lwt-frame) !important;
+
+  --toolbar-field-focus-color: var(--uc-inverted-colour) !important;
+  --toolbar-field-focus-background-color: var(--uc-highlight-colour) !important;
+  --toolbar-field-focus-border-color: var(--uc-inverted-colour) !important;
+
+  --toolbar-field-background-color: var(--uc-highlight-colour) !important;
+  --lwt-toolbar-field-highlight-text: var(--uc-highlight-colour) !important;
+
+  --lwt-selected-tab-background-color: var(--uc-highlight-colour) !important;
+
+  --toolbar-bgcolor: var(--lwt-frame) !important;
+  --toolbar-color: var(--lwt-text-color) !important;
+  --toolbarseparator-color: var(--uc-accent-colour) !important;
+  --toolbarbutton-hover-background: var(--uc-highlight-colour) !important;
+
+
+}
